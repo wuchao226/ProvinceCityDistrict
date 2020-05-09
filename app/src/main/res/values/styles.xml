@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- 主题样式 -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--&lt;!&ndash;Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色&ndash;&gt;-->
+        <!--&lt;!&ndash; 可以修改状态栏的颜色 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">@dimen/text_middle_size</item>
+        <item name="materialButtonStyle">@style/materialButton</item>
+        <item name="android:buttonStyle">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustPan</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+
+    <style name="materialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:inset">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!--横向分隔线-->
+    <style name="DividerFixedHeight">
+        <item name="android:background">@color/common_divider</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_divider_height</item>
+    </style>
+    <!-- 横向分隔线 带左右间距 -->
+    <style name="DividerFixedHeight.MarginLeftRight" parent="@style/DividerFixedHeight">
+        <item name="android:layout_marginLeft">@dimen/common_margin_middle</item>
+        <item name="android:layout_marginRight">@dimen/common_margin_middle</item>
+    </style>
+    <!-- 横向分隔线 带左右间距 -->
+    <style name="DividerFixedHeight.MarginLeftRight_15" parent="@style/DividerFixedHeight">
+        <item name="android:layout_marginLeft">@dimen/common_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_margin</item>
+    </style>
+    <!-- 横向分隔线 带左间距 -->
+    <style name="DividerFixedHeight.MarginLeft" parent="@style/DividerFixedHeight">
+        <item name="android:layout_marginLeft">@dimen/common_margin</item>
+    </style>
+    <!-- 竖向分隔线 -->
+    <style name="DividerFixedWidth">
+        <item name="android:background">@color/common_divider</item>
+        <item name="android:layout_width">@dimen/common_divider_width</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 竖向分隔线 带上下间距 -->
+    <style name="DividerFixedWidth.MarginTopBottom" parent="@style/DividerFixedWidth">
+        <item name="android:layout_marginTop">@dimen/common_margin_middle</item>
+        <item name="android:layout_marginBottom">@dimen/common_margin_middle</item>
+    </style>
+
+</resources>

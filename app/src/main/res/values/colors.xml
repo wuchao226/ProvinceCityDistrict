@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5158F0</color>
+    <color name="colorPrimaryDark">@color/common_white</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="common_black">#000000</color>
+    <color name="common_white">#ffffff</color>
+    <!--  深底色  -->
+    <color name="common_bg">#F6F6F6</color>
+    <!--  卡片色  -->
+    <color name="common_bg_card">#F6F7FA</color>
+    <!--  主色、高亮、按钮  -->
+    <color name="common_blue">#4C5CF3</color>
+    <color name="common_blue_20">#334C5CF3</color>
+    <color name="common_blue_press">#3352FE</color>
+    <color name="common_blue_dark">#0288d1</color>
+    <color name="common_blue_light">#039be5</color>
+    <color name="common_disable">#C2C2C2</color>
+    <!-- 分割线   -->
+    <color name="common_divider">#E1E3EC</color>
+    <!-- 宽分割线   -->
+    <color name="common_divider_width">#F6F6F6</color>
+    <color name="common_grey">#dddddd</color>
+    <color name="common_purple">#d500f9</color>
+    <!-- 警示、金额、消息提示   -->
+    <color name="common_red">#D81F37</color>
+    <!-- 珊瑚色——通知、提示   -->
+    <color name="common_coral">#FF714A</color>
+    <!--  深橙色  -->
+    <color name="common_orange_dark">#FF8C00</color>
+    <!--  橙色  -->
+    <color name="common_orange">#FFA500</color>
+    <!--标签按钮-->
+    <color name="button_tag">#F2F4FE</color>
+    <!--  次要按钮  -->
+    <color name="button_sub">#EFF2F7</color>
+    <!--  ICON  -->
+    <color name="button_icon">#616161</color>
+
+
+    <!--  标题文字  -->
+    <color name="text_title">#212121</color>
+    <!--  正文  -->
+    <color name="text_body">#616161</color>
+    <!-- 次要正文   -->
+    <color name="text_body_second">#999999</color>
+    <!--  辅助性文字  -->
+    <color name="text_body_sub">#9EA3BD</color>
+
+    <color name="text_dark">#999999</color>
+    <color name="text_light_dark">#333333</color>
+    <color name="text_normal">#666666</color>
+    <color name="text_blue">#5158F0</color>
+    <color name="text_black">#172434</color>
+    <color name="transparent">#00000000</color>
+</resources>

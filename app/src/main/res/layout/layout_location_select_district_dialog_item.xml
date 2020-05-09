@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="district"
+            type="com.wuc.location.location.SelectResultBean" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@drawable/common_card_bg"
+        android:minWidth="@dimen/dp_80">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_body"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_36"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:minWidth="@dimen/dp_70"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:text="@{district.district}"
+            android:textColor="@color/text_body"
+            android:textSize="@dimen/sp_14"
+            tools:text="优选场景" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="end|top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_location_tag_delete" />
+    </FrameLayout>
+
+</layout>

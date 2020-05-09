@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="isSelected"
+            type="Boolean" />
+        <!--是否是第一级数据-->
+        <variable
+            name="isFirst"
+            type="Boolean" />
+
+        <variable
+            name="selectedCount"
+            type="int" />
+
+        <variable
+            name="city"
+            type="com.wuc.location.location.City" />
+
+        <variable
+            name="province"
+            type="com.wuc.location.location.Province" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@{isSelected?@color/common_blue_20:@color/common_white}">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_content"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_15"
+            android:text="@{isFirst?province.name:city.name}"
+            android:textColor="@{isSelected?@color/text_title:@color/text_body}"
+            android:textSize="@dimen/sp_14"
+            tools:text="北京" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/WrapWrap.Horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_count"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:text='@{selectedCount>0?selectedCount+"":""}'
+                android:textColor="@color/text_body_sub"
+                android:textSize="@dimen/sp_14"
+                tools:text="3" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_tag"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/location_selected_tag"
+                android:visibility="@{isSelected?View.VISIBLE:View.INVISIBLE}" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</layout>
